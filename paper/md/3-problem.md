@@ -1,4 +1,5 @@
 # Problem 3
+
 ## 3.1
 $X, Y$を次のよう定義する。
 $$X=(\boldsymbol{x_1}, \boldsymbol{x_2}, ... \boldsymbol{x_n}).T$$
@@ -70,7 +71,8 @@ $$
 
 上の式による$\alpha$の更新を、双対問題の目的関数を$D(\boldsymbol{\alpha})$とし、以下の終了条件を満たすまで、繰り返す。
 
-$$ |D(\boldsymbol{\alpha}^{(t)}) - D(\boldsymbol{\alpha}^{(t-1)})|<\epsilon
+$$ 
+|D(\boldsymbol{\alpha}^{(t)}) - D(\boldsymbol{\alpha}^{(t-1)})|< \epsilon
 $$
 
 $\boldsymbol{\alpha}$の更新のたび、3.2で求めた式で、$\boldsymbol{w}$の更新を行う。
@@ -81,13 +83,13 @@ $\boldsymbol{\alpha}$の更新のたび、3.2で求めた式で、$\boldsymbol{w
 デートセットに関して、Toy Datasets のDataset II を用いた。
 各種変数に関して、重み$w, \alpha$の初期値として$\boldsymbol{w}=\boldsymbol{1}, \boldsymbol{\alpha}=\boldsymbol{1}$,正規化項に出現する定数について$\lambda = 1$, 終了判定に用いる定数について$\epsilon = 1e-6$ とした。
 
-![fig1](fig/3_3_both.png)
-![fig1](fig/3_3_diff.png)
+![fig1](md/fig/3_3_both.png)
+![fig1](md/fig/3_3_diff.png)
 初期の値の変化が大きすぎるので、反復200回以降のプロットをした。
-![fig1](fig/3_3_both_200.png)
-![fig1](fig/3_3_diff_200.png)
+![fig1](md/fig/3_3_both_200.png)
+![fig1](md/fig/3_3_diff_200.png)
 
 主問題の目的関数、双対問題の目的関数の差が十分小さくなり、最適化がなされた。
 
 dataset II の分類の様子は以下のようになった。
-![fig1](fig/3_3_classify.png)
+![fig1](md/fig/3_3_classify.png)
