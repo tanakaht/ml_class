@@ -1,0 +1,9 @@
+#!/bin/sh
+
+make html
+open -a 'Google Chrome' `make echohtml`
+
+(fswatch -r vsj19.md md | while read markdown_file; do
+  echo $markdown_file
+  make html && chrome-cli reload
+done)

@@ -1,0 +1,33 @@
+body {
+  margin-left: 5em;
+  margin-right: 5em;
+  line-height: 1.7;
+}
+
+dt {
+  font-weight: bolder;
+}
+
+table {
+  width: 90%;
+  border-collapse: collapse;
+  margin: 0 auto;
+  margin-top: 3ex;
+  margin-bottom: 3ex;
+}
+
+table tr:nth-child(odd) {
+  background-color: #transparent;
+}
+
+table thead {
+  background-color: #9bf;
+}
+
+table tr:nth-child(even) {
+  background-color: #fff;
+}
+
+td {
+  padding: 5px 20px 5px 20px;
+}
